@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#88E5DDF6"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <Button
+        android:id="@+id/option"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_option"
+        />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_setting"
+        />
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/send_money"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:layout_below="@id/option"
+        android:layout_marginLeft="20dp"
+        android:textColor="#323D90"/>
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:text="@string/select_option"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/send"
+        android:layout_marginLeft="20dp"
+        android:textColor="#323D90"/>
+
+    <TextView
+        android:id="@+id/random"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="225dp"/>
+
+
+    <Button
+        android:id="@+id/bank"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/select"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toLeftOf="@id/topup"
+        android:background="@drawable/ic_bankbtn"
+        />
+
+
+    <Button
+        android:id="@+id/topup"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/select"
+        android:layout_toLeftOf="@id/centreicon"
+        android:background="@drawable/ic_topupbtn" />
+    <Button
+        android:id="@+id/qrcode"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/select"
+        android:layout_toRightOf="@id/centreicon"
+        android:background="@drawable/ic_qrcodebtn" />
+
+    <Button
+        android:id="@+id/nearby"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/qrcode"
+        android:layout_below="@id/select"
+        android:background="@drawable/ic_nearbybtn" />
+
+    <FrameLayout
+        android:id="@+id/centreicon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/select"
+        android:layout_centerHorizontal="true"/>
+
+
+    <FrameLayout
+        android:id="@+id/recepients"
+        android:layout_width="1000dp"
+        android:layout_height="150dp"
+        android:background="@drawable/curves"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bank"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/read"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:text="@string/recent_receipts"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/recepients"
+        android:layout_alignTop="@id/recepients"
+        android:layout_marginLeft="40dp"
+        android:textColor="#323D90"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/recepients"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toLeftOf="@id/img2"
+        android:background="@mipmap/profile1_background"
+        android:foreground="@drawable/contactstroke"
+        />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="AMAN"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="#373D90"
+        android:layout_toStartOf="@id/name2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/img1"
+        />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/recepients"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@id/centreicon"
+        android:background="@mipmap/profile2_foreground"
+        android:foreground="@drawable/contactstroke"
+        />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="ADITYA"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:layout_toLeftOf="@id/centreicon"
+        android:textColor="#373D90"
+        android:layout_below="@id/img1"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/recepients"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/centreicon"
+        android:background="@mipmap/profile3_background"
+        android:foreground="@drawable/contactstroke"
+        />
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="SATYAM"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="#373D90"
+        android:layout_below="@id/img2"
+        android:layout_toRightOf="@id/centreicon"/>
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/recepients"
+        android:layout_toRightOf="@id/img3"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@mipmap/asif"
+        android:foreground="@drawable/contactstroke"
+        />
+
+    <TextView
+        android:id="@+id/name4"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="ASIF"
+        android:textAlignment="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="#F3373D90"
+        android:layout_below="@id/img3"
+        android:layout_toEndOf="@id/name3"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/addnew"
+        android:layout_width="1000dp"
+        android:layout_height="500dp"
+        android:background="@drawable/curves"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/recepients"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/contactsnew"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:text="@string/add_new_contact"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/addnew"
+        android:layout_alignTop="@id/addnew"
+        android:layout_marginLeft="40dp"
+        android:textColor="#323D90"/>
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="1000dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/contactsnew"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/searchbg"
+        android:hint="Search contacts...                          "
+        android:textSize="20dp"
+        android:inputType="text"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/fakesearch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/searchbar"
+        android:layout_alignRight="@id/searchbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="false"
+        android:background="#00FFFFFF"
+        android:foreground="@android:drawable/ic_menu_search" />
+
+
+
+
+    <ImageView
+        android:id="@+id/listdp"
+        android:layout_width="65dp"
+        android:layout_below="@id/searchbar"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/profile1_background" />
+    <TextView
+        android:id="@+id/listname"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/listdp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/listdp"
+        android:text="Ankur Sonkar"
+        android:autoSizeTextType="uniform"
+        android:textColor="#424040"/>
+    <TextView
+        android:id="@+id/listpphone"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/listname"
+        android:layout_toEndOf="@id/listdp"
+        android:text="8615247826"
+        android:autoSizeTextType="uniform"
+        android:textColor="#C1424040"/>
+
+    <Button
+        android:id="@+id/invitebtn"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/listdp"
+        android:background="@drawable/tabbar"
+        android:text="Invite"
+        android:textColor="#ffff" />
+
+
+
+    <ImageView
+        android:id="@+id/listdp2"
+        android:layout_width="65dp"
+        android:layout_below="@id/listdp"
+        android:layout_height="65dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/profile3_background" />
+    <TextView
+        android:id="@+id/listname2"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/listdp2"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/listdp"
+        android:text="Abhishek Singh"
+        android:autoSizeTextType="uniform"
+        android:textColor="#424040"/>
+    <TextView
+        android:id="@+id/listpphone2"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/listname2"
+        android:layout_toEndOf="@id/listdp2"
+        android:text="7985452018"
+        android:autoSizeTextType="uniform"
+        android:textColor="#C1424040"/>
+
+    <Button
+        android:id="@+id/invitebtn2"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/listdp2"
+        android:background="@drawable/tabbar"
+        android:text="Invite"
+        android:textColor="#ffff" />
+
+
+
+
+    <FrameLayout
+        android:id="@+id/tabs"
+        android:layout_width="1000dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/tabbar" />
+    <Button
+        android:id="@+id/usedh"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toStartOf="@id/notusedw"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_homebtnused"/>
+
+    <Button
+        android:id="@+id/notusedw"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toStartOf="@id/centreicon"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_walletnot"/>
+
+    <Button
+        android:id="@+id/notuseds"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toEndOf="@id/centreicon"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_settingnot"/>
+    <Button
+        android:id="@+id/notusedc"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toEndOf="@id/notuseds"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_scannot"/>
+
+
+</RelativeLayout>

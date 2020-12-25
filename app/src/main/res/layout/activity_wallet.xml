@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88E5DDF6"
+    tools:context=".wallet">
+
+<TextView
+    android:id="@+id/wallet"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="This Is Wallet"
+    android:textAlignment="center"
+    android:layout_centerVertical="true"
+    android:layout_margin="20dp"
+    android:autoSizeTextType="uniform"/>
+
+
+    <FrameLayout
+        android:id="@+id/centreicon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/select"
+        android:layout_centerHorizontal="true"/>
+
+    <FrameLayout
+        android:id="@+id/tabs"
+        android:layout_width="1000dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp" />
+    <Button
+        android:id="@+id/wallethome"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toStartOf="@id/notusedw"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_homenot"/>
+
+    <Button
+        android:id="@+id/notusedw"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toStartOf="@id/centreicon"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_walleused"/>
+
+    <Button
+        android:id="@+id/walletsetting"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toEndOf="@id/centreicon"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_settingnot"/>
+    <Button
+        android:id="@+id/walletscan"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/tabs"
+        android:layout_toEndOf="@id/walletsetting"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/ic_scannot"/>
+
+
+</RelativeLayout>

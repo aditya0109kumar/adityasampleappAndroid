@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">Bank App</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="enter_email">ENTER EMAIL</string>
+    <string name="enter_password">ENTER PASSWORD</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="user_name">USER NAME</string>
+    <string name="user_names">User Name</string>
+    <string name="recent_receipts">Recent Receipts</string>
+    <string name="send_money">Send Money</string>
+    <string name="select_option">Select Option</string>
+    <string name="todo">TODO</string>
+    <string name="add_new_contact">Add New Contact</string>
+</resources>
